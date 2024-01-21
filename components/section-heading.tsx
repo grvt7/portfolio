@@ -5,7 +5,11 @@ interface SectionHeading {
 }
 
 const SectionHeading: FC<SectionHeading> = ({ heading }) => {
-  return <h2 className="text-3xl font-medium capitalize mb-8">{heading}</h2>;
+  return (
+    <h2 className="text-3xl font-medium capitalize mb-8 text-center">
+      {heading}
+    </h2>
+  );
 };
 
 export default SectionHeading;
