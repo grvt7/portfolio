@@ -51,7 +51,7 @@ const Intro = () => {
         </div>
       </div>
 
-      <motion.p
+      <motion.h1
         className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5]
       sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
@@ -63,7 +63,7 @@ const Intro = () => {
         building <span className="italic">sites & apps</span>. My focus is{" "}
         <span className="underline">Java, Spring Boot and React (Next.js)</span>
         .
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center
