@@ -16,7 +16,7 @@ const About = () => {
       <p className="mb-3">
         After graduating with a Bachelors Degree in{" "}
         <span className="font-medium">Computer Science and Engineering</span>, I
-        leaped into the tech world, securing a position as a{" "}
+        delved into the tech world, securing a position as a{" "}
         <span className="font-medium">full-stack development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
