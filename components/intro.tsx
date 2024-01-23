@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import displayPicture from "@/public/my-passport-photo.jpg";
-import React from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/lib/hooks";
-import { useActiveSectionContext } from "@/context/active";
+import Image from 'next/image';
+import displayPicture from '@/public/my-passport-photo.jpg';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { HiDownload } from 'react-icons/hi';
+import { FaGithubSquare } from 'react-icons/fa';
+import { useSectionInView } from '@/lib/hooks';
+import { useActiveSectionContext } from '@/context/active';
 
 const Intro = () => {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView('Home', 0.5);
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -28,7 +28,7 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
@@ -50,7 +50,7 @@ const Intro = () => {
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "spring",
+              type: 'spring',
               stiffness: 125,
               delay: 0.1,
               duration: 0.7,
@@ -67,10 +67,10 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Garvit.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">Hello, I'm Garvit.</span> I'm a{' '}
+        <span className="font-bold">full-stack developer</span> with{' '}
         <span className="font-bold">2+ years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        building <span className="italic">sites & apps</span>. My focus is{' '}
         <span className="underline">Java, Spring Boot and React (Next.js)</span>
         .
       </motion.h1>
@@ -88,7 +88,7 @@ const Intro = () => {
           rounded-full outline-none focus:scale-110 hover:scale-110 hover:mx-2
           hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection('Contact');
             setTimeOfLastClick(Date.now());
           }}
         >
@@ -99,21 +99,18 @@ const Intro = () => {
           />
         </Link>
         <a
-          className="group bg-white text-gray-700 px-7
-          py-3 flex items-center gap-2 rounded-full outline-none 
-          focus:scale-110 hover:scale-110 hover:mx-2
-          active:scale-105 transition cursor-pointer borderBlack"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download={true}
         >
-          Download CV{" "}
+          Download CV{' '}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
         <a
           className="bg-white text-gray-700 p-4 flex items-center 
         gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-        active:scale-105 transition cursor-pointer borderBlack"
+        active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/grvt"
           target="_blank"
         >
@@ -123,7 +120,7 @@ const Intro = () => {
         <a
           className="bg-white text-gray-700 p-4 flex items-center 
         gap-2 rounded-full text-[1.35] focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950
-        active:scale-105 transition cursor-pointer borderBlack"
+        active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://github.com/grvt7"
           target="_blank"
         >
