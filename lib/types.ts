@@ -1,6 +1,6 @@
-import { links } from "./data";
+import { links } from './data';
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName = (typeof links)[number]['name'];
 
 export type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
